@@ -33,15 +33,34 @@ body {
 		background-color: darken($green_light, 10%);
 	}
 
+	&--white {
+		background-color: white;
+		color: $black;
+
+		&:hover {
+			background-color: darken(white, 10%);
+		}
+	}
+
 	&--border {
 		color: $black;
 		background-color: transparent;
 		border: 1px solid $black;
 		transition: color 0.3s, background-color 0.3s;
 
+		&.white {
+			border: 1px solid white;
+			color: white;
+		}
+
 		&:hover {
 			color: white;
 			background-color: darken($black, 10%);
+
+			&.white {
+				color: darken(black, 10%);
+				background-color: white;
+			}
 		}
 	}
 }

@@ -1,0 +1,53 @@
+.horizon {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+
+	.horizon__left {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-right: 180px;
+		background-color: $green_light;
+
+		.horizon__left__content {
+			max-width: 410px;
+
+			h2 {
+				margin-bottom: 3rem;
+				font-size: 4rem;
+				font-weight: 700;
+				line-height: 1;
+				color: white;
+			}
+
+			.btn {
+				width: 100%;
+				margin-bottom: 1rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.horizon__right {
+		position: relative;
+
+		.horizon__right--overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
