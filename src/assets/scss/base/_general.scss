@@ -14,3 +14,22 @@ body {
 		padding: 0 2rem;
 	}
 }
+
+.btn {
+	display: inline-block;
+	width: fit-content;
+	padding: 20px 36px;
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	background-color: $green_light;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: darken($green_light, 10%);
+	}
+}

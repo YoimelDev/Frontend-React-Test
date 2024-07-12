@@ -1,1 +1,4 @@
-export * from './Header'
+export * from './Header/Header';
+export * from './Hero/Hero';
+export * from './Icons/AccessPointIcon';
+export * from './Icons/PlayerPlayIcon';

@@ -1,11 +1,15 @@
 // Components
-import { Header } from '@/components/Header'
+import { Header, Hero } from '@/components'
 
 // Styles
 import '@/assets/scss/app.scss'
 
 const App = () => {
-	return <Header />
+	return <>
+		<Header />
+
+		<Hero />
+	</>
 }
 
 export default App
