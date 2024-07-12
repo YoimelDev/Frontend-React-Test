@@ -1,0 +1,60 @@
+.learn {
+	padding: 95px 0;
+	background-color: $gray_light;
+
+	.learn__content {
+		margin-bottom: 4rem;
+
+		h2 {
+			margin-bottom: 2rem;
+			font-size: 4rem;
+			font-weight: 700;
+			text-align: center;
+			line-height: 1;
+			color: black;
+		}
+
+		p {
+			max-width: 570px;
+			margin: auto;
+			font-size: 1rem;
+			font-weight: 400;
+			text-align: center;
+			color: black;
+		}
+	}
+
+	.learn__cards {
+		display: flex;
+		gap: 16px;
+
+		.learn__card {
+			overflow: hidden;
+
+			img {
+				transition: transform 0.3s;
+			}
+
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+
+			p {
+				position: relative;
+				z-index: 10;
+				padding: 1rem;
+				text-align: center;
+				color: white;
+				font-weight: 700;
+				background-color: $green_light;
+			}
+		}
+	}
+
+    .learn__button {
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
