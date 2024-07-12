@@ -1,13 +1,11 @@
 header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: $green_light;
 	color: white;
 
 	.header__topBar {
 		display: flex;
+		justify-content: center;
 		align-items: center;
+		background-color: $green_light;
 
 		@include mobile {
 			display: grid;
@@ -72,6 +70,41 @@ header {
 
 			&:hover {
 				background-color: darken($green_lighter, 10%);
+			}
+		}
+	}
+
+	.header__bottomBar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 16px auto;
+	}
+
+	.header__logo {
+		max-width: 175px;
+	}
+
+	.header__nav {
+		ul {
+			display: flex;
+			gap: 1.875rem;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+			font-size: 0.875rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			transition: color 0.3s;
+
+			&:hover {
+				color: $green_dark;
 			}
 		}
 	}
