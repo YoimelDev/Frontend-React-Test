@@ -1,5 +1,5 @@
 // Components
-import { Header, Hero, SocialMedia } from '@/components'
+import { TimeCountDown, Header, Hero, SocialMedia } from '@/components'
 
 // Styles
 import '@/assets/scss/app.scss'
@@ -12,6 +12,8 @@ const App = () => {
 		<Hero />
 
 		<SocialMedia />
+
+		<TimeCountDown />
 	</>
 }
 
