@@ -1,0 +1,32 @@
+.latestVideos {
+	padding: 95px 0;
+	background-color: $gray_light;
+
+    h2 {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1;
+        color: black;
+    }
+
+    .latestVideos__videos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+
+        p {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: $black;
+        }
+    }
+
+    .latestVideos__button {
+        margin-top: 4rem;
+        text-align: center;
+    }
+}

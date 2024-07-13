@@ -13,7 +13,37 @@ import green_bg from '@/assets/images/green_bg.webp'
 import '@/assets/scss/app.scss'
 import 'boxicons/css/boxicons.min.css'
 
+import Plyr from 'plyr-react'
+import 'plyr-react/plyr.css'
+
 const App = () => {
+	const videos = [
+		{
+			id: 'AzV77KFsLn4',
+			source: 'youtube',
+		},
+		{
+			id: 'AzV77KFsLn4',
+			source: 'youtube',
+		},
+		{
+			id: 'AzV77KFsLn4',
+			source: 'youtube',
+		},
+		{
+			id: 'AzV77KFsLn4',
+			source: 'youtube',
+		},
+		{
+			id: 'AzV77KFsLn4',
+			source: 'youtube',
+		},
+		{
+			id: 'AzV77KFsLn4',
+			source: 'youtube',
+		},
+	]
+
 	return (
 		<>
 			<Header />
@@ -129,6 +159,48 @@ const App = () => {
 						<picture>
 							<img src={pic5} loading="lazy" alt="Imagen" />
 						</picture>
+					</div>
+				</section>
+
+				<section className="latestVideos">
+					<div className="latestVideos__container container">
+						<div className="latestVideos__content">
+							<h2>Latest Videos</h2>
+
+							<div className="latestVideos__videos">
+								{videos.map((video, index) => (
+									<div
+										key={index}
+										className="latestVideos__video"
+									>
+										<Plyr
+											source={{
+												type: 'video',
+												sources: [
+													{
+														src: video.id,
+														// @ts-expect-error video source is a string
+														provider: video.source,
+													},
+												],
+											}}
+											options={{
+												controls: ['play-large'], // Esto mostrará solo el botón de play en el medio
+											}}
+										/>
+
+										<p>
+											Lorem ipsum dolor sit amet,
+											consetetur
+										</p>
+									</div>
+								))}
+							</div>
+						</div>
+
+						<div className="latestVideos__button">
+							<button className="btn">VIEW ALL</button>
+						</div>
 					</div>
 				</section>
 			</main>
