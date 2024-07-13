@@ -130,7 +130,7 @@ const App = () => {
 						</div>
 
 						<div className="learn__button">
-							<button className="btn btn--border">
+							<button className="btn btn--border btn--full">
 								LEARN MORE
 							</button>
 						</div>
@@ -199,7 +199,7 @@ const App = () => {
 						</div>
 
 						<div className="latestVideos__button">
-							<button className="btn">VIEW ALL</button>
+							<button className="btn btn--full">VIEW ALL</button>
 						</div>
 					</div>
 				</section>

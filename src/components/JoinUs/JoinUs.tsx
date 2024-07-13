@@ -79,7 +79,7 @@ export const JoinUs = () => {
 					</div>
 
 					<div className="joinUs__form__button">
-						<button className="btn">I'M IN</button>
+						<button className="btn btn--full">I'M IN</button>
 					</div>
 
                     <p className="joinUs__form__text">

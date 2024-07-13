@@ -33,6 +33,10 @@ body {
 		background-color: darken($green_light, 10%);
 	}
 
+	&--full {
+		min-width: 250px
+	}
+
 	&--white {
 		background-color: white;
 		color: $black;
