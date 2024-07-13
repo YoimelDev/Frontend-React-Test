@@ -10,8 +10,12 @@ body {
 	margin: 0 auto;
 	padding: 0 1rem;
 
-	@include mobile {
-		padding: 0 2rem;
+	@include desktop {
+		padding: 0 2rem;	
+	}
+
+	@include tablet {
+		padding: 0 1rem;
 	}
 }
 

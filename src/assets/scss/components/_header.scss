@@ -84,6 +84,10 @@ header {
 		justify-content: space-between;
 		align-items: center;
 		margin: 16px auto;
+
+		@include tablet {
+			display: none;
+		}
 	}
 
 	.header__logo {
@@ -110,6 +114,44 @@ header {
 
 			&:hover {
 				color: $green_dark;
+			}
+		}
+	}
+
+	.header__bottomBar__mobile {
+		position: absolute;
+		display: none;
+		width: 100%;
+
+		.header__logo {
+			max-width: 125px;
+		}
+
+		.header__nav {
+			display: none;
+
+			&.active {
+				display: flex;
+				justify-content: center;
+				background-color: $green_light;
+				padding: 16px 0;
+
+				ul {
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+			}
+		}
+
+		@include tablet {
+			display: block;
+
+			.header__bottomBar__mobile__container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: darken($green_light, 20%);
+				padding: 8px 16px;
 			}
 		}
 	}
