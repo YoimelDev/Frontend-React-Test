@@ -22,6 +22,7 @@ import 'boxicons/css/boxicons.min.css'
 
 import Plyr from 'plyr-react'
 import 'plyr-react/plyr.css'
+import { Footer } from './components/Footer'
 
 const App = () => {
 	const videos = [
@@ -214,6 +215,8 @@ const App = () => {
 				<JoinUs />
 
 				<News />
+
+				<Footer />
 			</main>
 		</>
 	)

@@ -1,0 +1,25 @@
+.footer {
+    padding: 40px 0;
+    background-color: $gray_light;
+
+	.footer__container {
+		display: flex;
+		justify-content: space-between;
+        align-items: center;
+	}
+	.footer__logo {
+		display: block;
+		max-width: 175px;
+	}
+
+	p {
+        max-width: 350px;
+		font-size: 1rem;
+		font-weight: 700;
+		color: $black;
+
+        &:last-child {
+            max-width: 190px;
+        }
+	}
+}
