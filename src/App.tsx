@@ -6,6 +6,7 @@ import {
 	SocialMedia,
 	JoinUs,
 	News,
+	Slider,
 } from '@/components'
 
 // Images
@@ -216,8 +217,10 @@ const App = () => {
 
 				<News />
 
-				<Footer />
+				<Slider />
 			</main>
+
+			<Footer />
 		</>
 	)
 }

@@ -26,7 +26,7 @@ export const Header = () => {
 				<nav className="header__nav">
 					<ul>						{
 							Array.from({ length: 5 }).map((_, index) => (
-								<li>
+								<li key={index}>
 									<a key={index} href="#">Lorem Ipsum</a>
 								</li>
 							))
