@@ -15,11 +15,19 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+            @include tablet {
+                filter: brightness(0.5);
+            }
         }
     }
 
     & > div {
         flex: 1;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     .joinUs__form {
@@ -32,6 +40,11 @@
 			font-weight: 700;
 			line-height: 1;
 			color: white;
+
+            @include tablet {
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
 		}
 
 		p {
@@ -42,11 +55,28 @@
 			color: white;
 		}  
 
+        @include tablet {
+            h2, p {
+                text-align: center;
+                margin-inline: auto;
+            }
+        }
+
         .joinUs__form__container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             max-width: 550px;
+
+            @include tablet {
+                margin: auto;
+            }
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                padding: 0 1rem;
+            }
 
             .joinUs__form__input {
                 width: 100%;
@@ -73,6 +103,16 @@
             .joinUs__form__input:nth-child(6),
             p {
                 grid-column: 1/3;
+            }
+
+            @include tablet {
+                .joinUs__form__button {
+                    grid-column: 1/3;
+
+                    .btn {
+                        width: 100%;
+                    }
+                }
             }
 
             p {

@@ -22,6 +22,17 @@
 			text-align: center;
 			color: black;
 		}
+
+		@include tablet {
+			h2 {
+				margin-bottom: 1rem;
+				font-size: 3rem;
+			}
+
+			p {
+				max-width: 100%;
+			}
+		}
 	}
 
 	.learn__cards {
@@ -34,6 +45,12 @@
 
 			img {
 				transition: transform 0.3s;
+
+				@include tablet {
+					width: 100%;
+					object-fit: cover;
+					max-height: 300px;
+				}
 			}
 
 			&:hover {
@@ -50,6 +67,15 @@
 				color: white;
 				font-weight: 700;
 				background-color: $green_light;
+			}
+		}
+
+		@include tablet {
+			flex-direction: column;
+			gap: 1rem;
+
+			.learn__card {
+				width: 100%;
 			}
 		}
 	}

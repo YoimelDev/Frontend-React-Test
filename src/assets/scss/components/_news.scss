@@ -18,6 +18,10 @@
 			height: 100%;
 			object-fit: cover;
 			background-color: #f5f6fa;
+
+			@include tablet {
+				filter: brightness(0.5);
+			}
 		}
 	}
 
@@ -30,6 +34,11 @@
 			font-weight: 700;
 			line-height: 1;
 			color: $black;
+
+			@include tablet {
+				font-size: 3rem;
+				color: white;
+			}
 		}
 
 		p {
@@ -38,6 +47,12 @@
 			font-size: 1rem;
 			font-weight: 400;
 			color: $black;
+
+			@include tablet {
+				color: white;
+			}
 		}
+
+
 	}
 }

@@ -9,6 +9,11 @@
         text-align: center;
         line-height: 1;
         color: black;
+
+        @include tablet {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
     }
 
     .latestVideos__videos {
@@ -23,10 +28,36 @@
             font-weight: 400;
             color: $black;
         }
+
+        @include tablet {
+            display: none;
+        }       
     }
 
     .latestVideos__button {
         margin-top: 4rem;
         text-align: center;
+    }
+
+    .latestVideos__videos__mobile {
+        display: none;
+    
+        @include tablet {
+            display: block;
+            margin-top: 2rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .splide__pagination {
+        position: relative;
+        margin-top: 2rem;
+
+        .splide__pagination__page {
+            opacity: 1;
+        }
     }
 }

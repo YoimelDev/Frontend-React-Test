@@ -1,4 +1,5 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide'
+// @ts-expect-error video source is a string
+import { Splide, SplideSlide } from '@splidejs/react-splide' 
 import '@splidejs/react-splide/css'
 
 import green_bg from '@/assets/images/green_bg.webp'

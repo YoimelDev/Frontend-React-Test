@@ -7,6 +7,14 @@
         align-items: center;
         gap: 30px;
 
+        @include tablet {
+            flex-direction: column;
+
+            picture {
+                order: -1;
+            }
+        }
+
         .information__content {
             max-width: 520px;
 
@@ -16,6 +24,12 @@
                 font-weight: 700;
                 line-height: 1;
                 color: black;
+
+                @include tablet {
+                    margin-bottom: 1rem;
+                    font-size: 3rem;
+                    text-align: center;
+                }
             }
     
             p {

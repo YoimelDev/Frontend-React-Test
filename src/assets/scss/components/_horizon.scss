@@ -3,6 +3,10 @@
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+
 	.horizon__left {
 		display: flex;
 		justify-content: flex-end;
@@ -27,6 +31,29 @@
 
 				&:last-child {
 					margin-bottom: 0;
+				}
+			}
+		}
+
+		@include tablet {
+			padding: 0 30px;
+
+			.horizon__left__content {
+				h2 {
+					margin-bottom: 1rem;
+					font-size: 3rem;
+				}
+			}
+		}
+
+		@include mobile {
+			justify-content: center;
+			padding: 30px;
+
+			.horizon__left__content {
+				h2 {
+					margin-bottom: 1rem;
+					font-size: 2rem;
 				}
 			}
 		}
