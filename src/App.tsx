@@ -11,14 +11,12 @@ import {
 	Footer,
 	Horizon,
 	Learn,
+	Information
 } from '@/components'
-
-
 
 // Styles
 import '@/assets/scss/app.scss'
 import 'boxicons/css/boxicons.min.css'
-import { Information } from './components/Information'
 
 const App = () => {
 	return (

@@ -5,6 +5,7 @@ export * from './Horizon';
 export * from './Icons';
 export * from './JoinUs';
 export * from './LatestVideos';
+export * from './Information';
 export * from './Learn';
 export * from './News';
 export * from './Slider';
