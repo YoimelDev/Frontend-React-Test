@@ -1,17 +1,13 @@
-// Components
+import { Layout } from '@/layout'
+
 import {
-	TimeCountDown,
-	Header,
-	Hero,
-	SocialMedia,
 	LatestVideos,
 	JoinUs,
 	News,
 	Slider,
-	Footer,
 	Horizon,
 	Learn,
-	Information
+	Information,
 } from '@/components'
 
 // Styles
@@ -20,33 +16,21 @@ import 'boxicons/css/boxicons.min.css'
 
 const App = () => {
 	return (
-		<>
-			<Header />
+		<Layout>
+			<Information />
 
-			<Hero />
+			<Learn />
 
-			<SocialMedia />
+			<Horizon />
 
-			<TimeCountDown />
+			<LatestVideos />
 
-			<main>
-				<Information />
+			<JoinUs />
 
-				<Learn />
+			<News />
 
-				<Horizon />
-
-				<LatestVideos />
-
-				<JoinUs />
-
-				<News />
-
-				<Slider />
-			</main>
-
-			<Footer />
-		</>
+			<Slider />
+		</Layout>
 	)
 }
 
