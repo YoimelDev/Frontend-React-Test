@@ -1,5 +1,12 @@
 // Components
-import { TimeCountDown, Header, Hero, SocialMedia, JoinUs } from '@/components'
+import {
+	TimeCountDown,
+	Header,
+	Hero,
+	SocialMedia,
+	JoinUs,
+	News,
+} from '@/components'
 
 // Images
 import pic1 from '@/assets/images/Pic1.webp'
@@ -205,6 +212,8 @@ const App = () => {
 				</section>
 
 				<JoinUs />
+
+				<News />
 			</main>
 		</>
 	)
